@@ -9,10 +9,10 @@ class First {
 }
 class Second extends First {
 
-    //hello() {
+    hello() {
         First.hello();
         console.log('А я наследуемый метод!');
-  //  }
+  }
 
 }
 
