@@ -6,12 +6,10 @@ class First {
     }
 }
 class Second extends First {
+
     hello() {
-        console.log('А я наследуемый метод!');
+        super.hello() + console.log('А я наследуемый метод!');
     }
 }
-const family = [new First(), new Second()];
-
-family.forEach((message) => {
-    message.hello();
-});
+const second = new Second();
+second.hello();
